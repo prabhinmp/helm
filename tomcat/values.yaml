@@ -1,0 +1,21 @@
+name: tomcat
+deployment:
+ replica_count: 1
+ image:
+   repository: prabhin/new
+   tag: tomcat
+   pullPolicy: Always
+ resources:
+  requests:
+   cpu: 100m
+   memory: 0.2Gi
+  limits:
+   cpu: 100m
+   memory: 0.2Gi
+ zone:
+   - a
+   - b
+   - c  
+service:
+  type: ClusterIP
+  port: 8080
