@@ -13,7 +13,7 @@ deployment:
    cpu: 100m
    memory: 0.2Gi
  zone:
-   - a
+   - d
    - b
    - c  
 service:
